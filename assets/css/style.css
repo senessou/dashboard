@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.color-back {
+    background-image: radial-gradient(rgba(30, 143, 255, 0.781), rgba(193, 220, 247, 0.781));
+}
+
+/*
+
+    partie inscription du tableau de board
+ 
+*/
+
+.header {
+    height: 100vh;
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;    
+}
+.inscription {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    border: 2px solid rgb(183, 183, 247);
+    background-color: white;
+    border-radius: 10px;
+}
+.inscription {
+    color: darkblue;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.inscription select {
+    color: darkblue;
+}
+.inscription input, select {
+    width: 100%;
+    padding: .3rem;
+    border: 1px solid rgba(30, 143, 255, 0.781);
+    margin: 5px 0;
+}
+.inscription input[type=submit] {
+    background-color: rgba(0, 0, 139, 0.726);
+    color: white;
+    padding: .5rem;
+    font-size: 1rem;
+}
+.inscription input[type=submit]:hover {
+    background-color: darkblue;
+}
+.inscription span {
+    color: red;
+}
+
+
+/*
+****
+****partie deuxieme du tableau de board
+**** 
+*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    background-color: #242e42;
+    padding: 20px;
+}
+.header-titre {
+    margin-left: 10px;
+    color: white;
+}
+.header-nav {
+    margin-left: 10px;
+    color: white;
+    margin-top: 30px;
+}
+.header-nav h3 {
+    font-size: .8rem;
+    color: #485f8d;
+}
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+}
+.header-nav ul li {
+    padding: 5px 0;
+}
+.header-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    margin-left: 20%;
+    padding: 20px 30px;
+    background-color: rgba(169, 169, 169, 0.2);
+    height: 100vh;
+}
+.section-search {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+}
+.section-search input {
+    padding: 5px;
+}
+.section-login {
+    display: flex;
+    justify-content: end;
+}
+.section-table {
+    background-color: white;
+    margin-top: 20px;
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    font-size: 13px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table tr:nth-child(even) {
+    background-color: #dae5fa;
+}
+table tr th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 3px solid #01050e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table tr td {
+    padding: 10px;
+
+}
+table tr td span a{
+    text-decoration: none;
+}
