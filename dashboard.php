@@ -53,11 +53,11 @@ else {
             <input type="sea" name="name" placeholder="Search Pages..." aria-label="search">
         </form>
             <div class="section-login">
-                <h3>Hello <?=$_SESSION['name']?></h3>
+                <h3>Hello <?=$_SESSION['user']?></h3>
                 <img src="#" alt="icon">
-                <?php if(isset($_SESSION['user_id'])) {?>
+                <?php if(isset($_SESSION['user'])) {?>
                     <p>
-                        <a href="./user/logout.php">logout</a>
+                        <a href="./user/logout.php">Déconnexion</a>
                     </p>
                 <?php } else {?>
                     <p>

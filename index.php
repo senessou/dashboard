@@ -52,7 +52,7 @@ require_once (__DIR__ . '/includes/header.php');
                     <input type="password" id="password" name="password" placeholder="Entre au moin 8 caratère">
 
                     <label for="password1">Confirme Password <span>*</span></label>
-                    <input type="password" id="password1" name="password1" placeholder="Entre au moin 8 caratère">
+                    <input type="password" id="password1" name="password" placeholder="Entre au moin 8 caratère">
 
                     <input type="submit" value="Envoyer">
                 </div>

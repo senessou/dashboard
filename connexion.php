@@ -2,11 +2,11 @@
 require_once (__DIR__ . '/config/database.php');
 
 if($_POST) {
-    $stm = $pdo->query("SELECT id, password FROM user WHERE email='" . $_POST['email'] ."'");
+    $stm = $pdo->query("SELECT id, name, password FROM user WHERE email='" . $_POST['email'] ."'");
     $user = $stm->fetch(PDO::FETCH_ASSOC);
 
     if(password_verify($_POST['password'], $user['password']) ) {
-        $_SESSION['user_id'] = $user['user'];
+        $_SESSION['user'] = $user['name'];
         header("Location: dashboard.php");
         exit();
     }
